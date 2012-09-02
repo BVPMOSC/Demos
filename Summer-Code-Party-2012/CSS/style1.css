@@ -1,0 +1,163 @@
+body
+{
+	background-color : #eee9e9 ;
+}
+
+.p1
+{
+	font-family : Monotype Corsiva ;
+}
+
+#menu
+{
+	
+	
+}
+
+#menu li
+{
+	
+}
+
+
+
+.a_menu:link, .a_menu:visited, .a_menu:active
+{
+	width : 200px ;
+	
+	background-color : #87bf21 ;
+	
+	text-align : center ;
+	color : #ffffff ;
+	
+}
+
+.a_menu:hover
+{
+	
+}
+
+h1
+{
+	font-family : "Times New Roman" ;
+	font-size : 40px ;
+	color : orange ;
+}
+
+h2
+{
+	font-family : "Arial Black" ;
+	font-size : 30px ;
+	color : #580000 ;
+}
+
+span
+{
+	
+}
+
+#div2
+{
+	text-align : left ;
+	font-weight : bold ;
+	width : 50% ;
+	float : left ;
+	height : 50px ;
+}
+
+#div3
+{
+	width : 50% ;
+	text-align : right ;
+	float : right ;
+	height : 50px ;
+}
+#mosc
+{
+	text-align : center ;
+}
+
+.button_like, .button_like:link, .button_like:visited, .button_like:active
+{
+	
+	background-color : #ff9900 ;
+	font-weight:bold;
+	font-size:15px;
+	width:120px;
+	text-align:center;
+	text-decoration : none ;
+	
+	
+	margin-left:1px;
+	color : #ffffff ;
+}
+
+.button_like:hover
+{
+	
+}
+
+.blog:link, .blog:visited
+{
+	
+	color : brown  ;
+	font-size : 40px ;
+	
+}
+
+.blog:hover
+{
+	text-decoration : underline ;
+}
+
+.blog:active
+{
+	
+}
+
+.team
+{
+	background-color : #c0c0c0 ;
+	top : 100px ;
+	
+}
+
+ul.team1
+{
+	
+	font-size : 20px ;
+}
+
+.desc
+{
+	
+	font-size : 35px ;
+	color : red ;
+	text-align : center ;
+}
+
+#sess
+{
+	font-family:"Trebuchet MS", Arial,sans-serif;
+	width:100%;
+	
+}
+
+#sess td
+{
+font-size:20px;
+
+}
+#sess th 
+{
+border : 1px solid #98bf21 ;
+font-size:25px;
+text-align:left;
+
+background-color:#000000;
+color:#ffffff;
+}
+.alt
+{
+
+}

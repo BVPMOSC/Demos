@@ -1,0 +1,246 @@
+body
+{
+	background-color : #d0d0d0 ;
+}
+
+@font-face
+{
+	font-family : MyFont ;
+	src:url('Our_Font.ttf') ;
+}
+
+@keyframes myAnim
+{
+	0%		{left:0px;}
+	25%		{left:250px; transform : rotate(90deg) ; }
+	50%		{left:500px; transform : rotate(360deg) ;}
+	75%		{left:250px;background:#1ec7e6;}
+	100%	{left:0px; transform : rotate(-360deg); }
+}
+
+@-moz-keyframes myAnim
+{
+	0%		{left:0px;}
+	25%		{left:250px; -moz-transform : rotate(90deg) ;}
+	50%		{left:500px; -moz-transform : rotate(360deg) ;}
+	75%		{left:250px;background:#1ec7e6;}
+	100%	{left:0px; -moz-transform : rotate(-360deg);}
+}
+
+@-webkit-keyframes myAnim
+{
+	0%		{left:0px;}
+	25%		{left:250px; -webkit-transform : rotate(90deg) ;}
+	50%		{left:500px; -webkit-transform : rotate(360deg) ;}
+	75%		{left:250px;background:#1ec7e6;}
+	100%	{left:0px; -webkit-transform : rotate(-360deg) ;}
+}
+
+table
+{
+	padding : 10px 20px 10px 10px ;
+}
+
+td
+{
+	padding : 10px 10px 10px 10px ;
+}
+
+td.T1
+{
+	width : 33% ;
+	height : 300px ;
+}
+
+h3
+{
+	text-align : center ;
+}
+
+#border_radius
+{
+	border-width : 2px ;
+	border-style : solid ;
+	width : 300px ;
+	background-color : #dddddd ;
+	border-radius : 25px ;
+	text-align : center ;
+}
+
+#border_shadow
+{
+	width : 300px;
+	border-width : 2px ;
+	border-style : solid ;
+	background-color : #aaaaaa ;
+	box-shadow : 10px 10px 5px #888888 ;
+	text-align : center ;
+}
+
+#border_image
+{
+	background-color : #ffffff ;
+	height : 150px ;
+	border-width:15px;
+	width:300px;
+	float : left ;
+	padding:10px 20px;
+	-moz-border-image:url('border.jpg') 30 30 round; /* Firefox */
+	-webkit-border-image:url('border.jpg') 30 30 round; /* Safari and Chrome */
+	-o-border-image:url('border.jpg') 30 30 round; /* Opera */
+	border-image:url('border.jpg') 30 30 round;
+}
+
+#image
+{
+	height : 150px ;
+	width:300px ;
+	float:right ;
+	text-align : left ;
+}
+
+#shadow
+{
+	text-shadow : 5px 5px 5px #dd0000 ;
+	font-size : 30px ;
+}
+
+#ourFont
+{
+	font-family : MyFont ;
+	font-size : 45px ;
+}
+
+#Transform
+{
+	display : block ;
+	background-color : #cc0000;
+	width : 200px ;
+	height : 150px ;
+	border-style : solid ;
+	border-width : 2px ;
+}
+
+.rotated
+{
+	transform : rotate(45deg) ;
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Safari and Chrome */
+	-o-transform: rotate(45deg); /* Opera */
+	-moz-transform: rotate(45deg); /* Firefox */
+}
+
+.skewed
+{
+	transform: skew(20deg,30deg);
+	-ms-transform: skew(20deg,30deg); /* IE 9 */
+	-webkit-transform: skew(20deg,30deg); /* Safari and Chrome */
+	-o-transform: skew(20deg,30deg); /* Opera */
+	-moz-transform: skew(20deg,30deg); /* Firefox */
+}
+
+.long
+{
+	width : 100px ;
+	height : 100px ;
+	background-color : #00aa00 ;
+	border-style : solid ;
+	border-width : 2px ;
+	font-size : 20px ;
+	transition:width 1s;
+	-moz-transition:width 1s; /* Firefox 4 */
+	-webkit-transition:width 1s; /* Safari and Chrome */
+	-o-transition:width 1s; /* Opera */
+}
+
+.long:hover
+{
+	width : 200px ;
+}
+
+.large
+{
+	width : 100px ;
+	height : 100px ;
+	background-color : #00aa00 ;
+	border-style : solid ;
+	border-width : 2px ;
+	font-size : 20px ;
+	transition : width 1s, height 1s;
+	-moz-transition: width 1s, height 1s, background-color 1s  ;
+	-webkit-transition : width 1s, height 1s, background-color 1s  ;
+	-o-transition : width 1s, height 1s, background-color 1s  ;
+}
+
+.large:hover
+{
+	width : 200px ;
+	height : 200px ;
+}
+
+.wonder
+{
+	width : 100px ;
+	height : 100px ;
+	background-color : #00aa00 ;
+	border-style : solid ;
+	border-width : 2px ;
+	font-size : 20px ;
+	transition : width 2s, height 2s, background-color 2s ;
+	-moz-transition : width 2s, height 2s, background-color 2s , -moz-transform 2s ;
+	-webkit-transition : width 2s, height 2s, background-color 2s , -webkit-transform 2s ;
+	-o-transition : width 2s, height 2s, background-color ss , -o-transform 2s ;
+}
+
+.wonder:hover
+{
+	width : 300px ;
+	height : 300px ;
+	background-color : #ffffff ;
+	transform : rotate(360deg) ;
+	-moz-transform : rotate(360deg) ;
+	-o-transform : rotate(360deg) ;
+	-webkit-transform : rotate(360deg) ;
+}
+
+.anim
+{
+	width : 100px ;
+	height : 100px ;
+	background-color : red ;
+	position : relative ;
+	animation : myAnim 5s infinite;
+	-moz-animation : myAnim 5s infinite ;
+	-webkit-animation : myAnim 5s infinite ;
+}
+
+p
+{
+	text-align : center ;
+	font-size : 25px ;
+}
+
+.search
+{
+	height : 20px ;
+	width : 20px ;
+}
+
+.txt
+{
+	width : 0px ;
+	height : 20px ;
+	transition : width 1s ;
+	border-color : #f0f0f0 ;
+	border-style : solid ;
+	border-width : 1px ;
+	-moz-transition : width 1s, border-width 1s, border-color 1s ;
+	-webkit-transition : width 1s, border-width 1s, border-color 1s ;
+}
+
+.txt:hover
+{
+	width : 200px ;
+	border-width : 2px ;
+	border-color : black ;
+}
